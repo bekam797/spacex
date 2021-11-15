@@ -1,0 +1,103 @@
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__menu {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.header__menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.header__menu span:nth-child(1) {
+  top: 0px;
+}
+
+.header__menu span:nth-child(2),.header__menu span:nth-child(3) {
+  top: 8px;
+}
+
+.header__menu span:nth-child(4) {
+  top: 16px;
+}
+
+.header__menu.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.header__menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header__menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.header__menu.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.header__search__container {
+  position: relative;
+  margin-top: 11px;
+}
+
+.header__search__icon {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 10px;
+}
+
+.header__search {
+  width: 100%;
+  max-width : calc(100% - 50px);
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 46px;
+  outline: none;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .header {
+    display: flex;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__search__container {
+    margin-left: 320px;
+  }
+  .header__search {
+    width: 320px;
+  }
+  .header__content {
+    position: fixed;
+  }
+}

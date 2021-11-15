@@ -1,0 +1,83 @@
+.content {
+  padding: 15px;
+  background: #1B1D22;  
+  margin-top: 30px;
+  background: linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%);
+  border-radius: 20px;
+  height: 70vh;
+}
+
+.content__title {
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.content__email, .content__box__title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.content__box__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content__box {
+  background: #FFFFFF;
+  border-radius: 10px;
+  color: #000000;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.content__required {
+  font-size: 18px;
+  line-height: 20px;
+  color: #979797;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.content__num {
+  font-size: 34px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+
+.content__nodata {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 700px) {
+  .content {
+    padding: 30px 50px;
+    margin-left: 320px;
+  }
+  .content__box {
+    width: 320px;
+  }
+  .content__required, .content__num {
+    text-align: initial;
+  }
+  .content__required {
+    font-size: 34px;
+    line-height: 44px;
+    margin-top: 30px;
+  }
+  .content__num {
+    font-size: 56px;
+    line-height: 66px;
+  }
+}
